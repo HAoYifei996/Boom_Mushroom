@@ -43,6 +43,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEditor.UI.dll:
+    - UnityEditor.UI.ImageEditor
+    - UnityEditor.UI.InputFieldEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -109,63 +112,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11216}
+      Script: {instanceID: 11214}
     - Class: 114
-      Script: {instanceID: 11346}
+      Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11394}
     - Class: 114
-      Script: {instanceID: 11436}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 11478}
+      Script: {instanceID: 11476}
     - Class: 114
-      Script: {instanceID: 11816}
+      Script: {instanceID: 11814}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11946}
     - Class: 114
-      Script: {instanceID: 12028}
+      Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12088}
+      Script: {instanceID: 12086}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 12286}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12310}
+      Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12502}
     - Class: 114
-      Script: {instanceID: 12576}
+      Script: {instanceID: 12574}
     - Class: 114
-      Script: {instanceID: 12658}
+      Script: {instanceID: 12656}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 12678}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12878}
+    - Class: 114
+      Script: {instanceID: 12898}
     - Class: 114
       Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 12902}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12924}
     - Class: 114
-      Script: {instanceID: 12926}
+      Script: {instanceID: 13040}
     - Class: 114
-      Script: {instanceID: 13042}
+      Script: {instanceID: 13390}
     - Class: 114
-      Script: {instanceID: 13392}
+      Script: {instanceID: 13472}
     - Class: 114
-      Script: {instanceID: 13474}
-    - Class: 114
-      Script: {instanceID: 13504}
+      Script: {instanceID: 13502}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,25 +233,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11216}
+      Script: {instanceID: 11214}
     - Class: 114
-      Script: {instanceID: 11478}
+      Script: {instanceID: 11476}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11946}
     - Class: 114
-      Script: {instanceID: 11966}
+      Script: {instanceID: 11964}
     - Class: 114
-      Script: {instanceID: 12148}
+      Script: {instanceID: 12146}
     - Class: 114
-      Script: {instanceID: 12472}
+      Script: {instanceID: 12470}
     - Class: 114
-      Script: {instanceID: 12944}
+      Script: {instanceID: 12942}
     - Class: 114
-      Script: {instanceID: 13042}
+      Script: {instanceID: 13040}
     - Class: 114
-      Script: {instanceID: 13330}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

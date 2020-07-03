@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviourPun, IPunObservable, IChatClientLis
     public GameObject chatAreaPrefab;
     public GameObject chatInputField;
     private bool is_pressT = false;
+    private bool is_hasChatArea = false;
     private string msg;
 
     public ChatClient client;
@@ -420,21 +421,26 @@ public class PlayerController : MonoBehaviourPun, IPunObservable, IChatClientLis
         }
 
         // t 聊天
-        if (Input.GetKeyDown(KeyCode.T))
+        if (!is_pressT && Input.GetKeyDown(KeyCode.T))
         {
             is_pressT = true;
-            client.PublishMessage("all", "我好");
+            //client.PublishMessage("all", "Hello Everyone!");
             GameObject chatInput = Instantiate(chatInputField, chatInputField.transform.position, Quaternion.identity);
             chatInput.SetActive(true);
             chatInput.transform.SetParent(GameObject.Find("UI").transform);
             chatInput.transform.GetComponent<InputField>().ActivateInputField();
+
         }
-        if (is_pressT && Input.GetKeyDown(KeyCode.F1))
+        if (is_pressT && Input.GetKeyDown(KeyCode.Return))
         {
-            GameObject chatInput = GameObject.Find("ChatInputFieldText");
-            msg = chatInput.transform.GetComponent<Text>().text;
-            Debug.Log(msg);
+            GameObject chatInputText = GameObject.Find("ChatInputFieldText");
+            GameObject chatInput = GameObject.Find("ChatInputField(Clone)");
+            msg = chatInputText.transform.GetComponent<Text>().text;
+            
             client.PublishMessage("all", msg);
+            chatInput.SetActive(false);
+            Debug.Log(chatInput.activeSelf);
+            is_pressT = false;
 
         }
 
@@ -698,7 +704,7 @@ public class PlayerController : MonoBehaviourPun, IPunObservable, IChatClientLis
 
 
         //这个方法用于向频道发送消息，这里我们向世界聊天频道发送了大家好，那么订阅了这个频道的人都能接受到这条消息。
-        client.PublishMessage("all", "大家好");
+        client.PublishMessage("all", "Hello Everyone!");
 
         //这个方法用于发送私人消息，这里我们向一个叫小小的用户发送了一条消息“你好”。如果这个用户在线的话，他将收到这条消息。
         //client.SendPrivateMessage("小小", "你好");
@@ -711,17 +717,22 @@ public class PlayerController : MonoBehaviourPun, IPunObservable, IChatClientLis
 
     void IChatClientListener.OnGetMessages(string channelName, string[] senders, object[] messages)
     {
-        GameObject chatArea = Instantiate(chatAreaPrefab, chatAreaPrefab.transform.position, Quaternion.identity);
-        chatArea.SetActive(true);
-        chatArea.transform.SetParent(GameObject.Find("UI").transform);
+        if(!is_hasChatArea)
+        {
+            GameObject chatArea = Instantiate(chatAreaPrefab, chatAreaPrefab.transform.position, Quaternion.identity);
+            is_hasChatArea = true;
+            chatArea.SetActive(true);
+            chatArea.transform.SetParent(GameObject.Find("UI").transform);
+        }
+        
+        
         gridLayout = GameObject.Find("ChatContent").transform;
         //chatAreaPrefab.SetActive(true);
-        Debug.Log("频道：" + channelName + ",发送者：" + senders[0] + ", 消息内容：" + messages[0]);
         for (int i = 0; i < senders.Length; i++)
         {
             GameObject newChatContent = Instantiate(chatContentPrefab, gridLayout.position, Quaternion.identity);
 
-            newChatContent.GetComponentInChildren<Text>().text = "频道：" + channelName + "发送者：" + senders[i] + ", 消息内容：" + messages[i];
+            newChatContent.GetComponentInChildren<Text>().text = "CHANNEL : " + channelName + "  |  " + senders[0] + " : " + messages[0];
 
             newChatContent.transform.SetParent(gridLayout);
         }

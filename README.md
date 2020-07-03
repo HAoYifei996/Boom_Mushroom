@@ -2,7 +2,7 @@
 
 This is the final project for ***Software Architecture and Application Development***  @ XMU.
 
-![image](http://github.com/HAoYifei996/Boom_Mushroom/raw/master/src/login.jpg)
+![login_view](https://github.com/HAoYifei996/Boom_Mushroom/blob/master/src/login.jpg)
 
 
 
