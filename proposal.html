@@ -16,7 +16,7 @@
         <div class="row">
 
           <div class="col-3 templateux-logo">
-            <a href="index.html" class="animsition-link">CS-184 Final Project</a>
+            <a href="index.html" class="animsition-link">Final Project</a>
           </div>
 
           <nav class="col-9 site-nav">
@@ -63,38 +63,23 @@
             <div class="row justify-content-center mb-5">
 
               <div class="col-md-10">
-                <h2 class="mb-3">Problem Description</h2>
+                <h2 class="mb-3">Description</h2>
                 <p>
-                  We know how to implement cloth simulation in our last project. However, it is not enough if we want a
-                  more accurate result. So we will extend the CPU cloth simulation onto GPU using OpenGL shaders and
-                  implement it with better accuracy. Based on the implementation in project four, we plan to add more
-                  features to this simulation system: a ball interacting with the cloth, simulation wind via cloth
-                  movement. And we hope to also simulate more complicated scenarios like accurate self-collision to
-                  better represent the real world.
+                  Due to our interests, we plan to create a simple FPS games based on Unity Engine and C#. It is the first time we create such project so it's a challenge for all of us. The development cycle is around 1 month and we present this project we called "Boom Mushroom".
                 </p>
                 <h2 class="mb-3 mt-5">Goals and Deliverables</h2>
-                <p>In this project, we will create a cloth simulation system. This system can simulate accurate cloth
-                  like in the real world. We can also interact with the cloth, like controlling a ball to go through
-                  the cloth and adding wind towards the cloth. We can control the texture of the cloth, the size of the
-                  ball, the power when throwing the ball, the direction and power of the wind and so on.</p>
+                <p>In this project, we create a FPS game "Boom Mushroom"(BM). BM contains basic elements of a FPS game including online support and multiple access. BM supports up to 20 people in the same room to start a game. Additional materials such as first aid and room comunication are also provided(See Gallery for details).
+                </p>
                 <p><b>What we plan to deliver:</b></p>
-                <li>Extend the cloth simulation from CPU to GPU via OpenGL shader to get better performance.</li>
-                <li>Simulate the above interaction of wind, ball and the cloth and different results with different controls.</li>
+                <li>A FPS game "Boom Mushroom"</li>
+                <li>Detailed development docs.</li>
                 <p></p>
-                <p><b>What we hope to deliver:</b></p>
-                <li>Change the surface material of the ball to simulate different friction.</li>
-                <li>Hope to simulate better self-collision with different algorithms.</li>
-                <p></p>
-                <p>We will measure the quality / performance of our system by comparing it with what happens in the real
-                  world and test if it satisfies the laws of physics. Besides that, we will also treat frame rate as a
-                  important physical performance.</p>
-
                 <h2 class="mb-3 mt-5">Schedule</h2>
                 <ul class="timeline">
                   <li>
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4 class="timeline-title"><code>OpenGL</code>, Basic Environment Renderings</h4>
+                        <h4 class="timeline-title"><code>Unity</code>, Basic Environment Renderings</h4>
                         <p>
                           <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1.0 week
                           </small>
@@ -102,10 +87,11 @@
                       </div>
                       <div class="timeline-body">
                         <p>
-                          Expand on the previous knowledge of <code>OpenGL</code>; Learn how to use
-                          <code>OpenGL</code> in <code>C++</code> and create an interactive application; Prepare
+                          Download the basic <code>Unity</code> develop toolkit and environment setup.
+                          Expand on the previous knowledge of <code>C#</code>; Learn how to use
+                          <code>C#</code> in <code>Unity</code> and create an interactive application; Prepare
                           basic
-                          environment settings for future simulations.
+                          environment settings for future development.
                         </p>
                       </div>
                     </div>
@@ -113,7 +99,7 @@
                   <li class="timeline-inverted">
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4 class="timeline-title">Basic Cloth Simulations</h4>
+                        <h4 class="timeline-title">Game Scenes Setup</h4>
                         <p>
                           <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1.0 week
                           </small>
@@ -121,8 +107,7 @@
                       </div>
                       <div class="timeline-body">
                         <p>
-                          Implement basic Cloth Simulation using <code>OpenGL</code> and <code>C++</code> using
-                          Mass-spring model; Verlet Integration; Explicit Euler Integration.
+                          Deploy basic game scenes and character models in the <code>Unity</code> project. Create basic physical support(e.g walking, running) for game settings.
                         </p>
                       </div>
                     </div>
@@ -130,7 +115,7 @@
                   <li>
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4 class="timeline-title">Complex Cloth Simulations (Interactivity with <code>WebGL</code>)
+                        <h4 class="timeline-title">Game function development.
                         </h4>
                         <p>
                           <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1.5 week
@@ -139,8 +124,7 @@
                       </div>
                       <div class="timeline-body">
                         <p>
-                          Add extra components to the environment renderings such as dummy; force; elasticity;
-                          texture; lighting; (Possibly) implement <code>WebGL</code>-based simulation
+                          Add extra functions to the game to better reinforce gaming experience, detailed functions include HP bar, shooting gun fire, shooting touch etc.
                         </p>
                       </div>
                     </div>
@@ -148,7 +132,7 @@
                   <li class="timeline-inverted">
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4 class="timeline-title">Presentation and Demos</h4>
+                        <h4 class="timeline-title">Docs and web-pages</h4>
                         <p>
                           <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 0.5 week
                           </small>
@@ -156,9 +140,7 @@
                       </div>
                       <div class="timeline-body">
                         <p>
-                          Prepare the final presentation; finish high-quality and precise renders of cloth
-                          simulations
-                          with dummy, force, elasticity, texture, and lighting.
+                         Detailed web pages provided, we decide to mix our docs into our presentation web pages. Web design and accomplishments presentation are done in this period.
                         </p>
                       </div>
                     </div>
@@ -166,12 +148,11 @@
                 </ul>
 
                 <h2 class="mb-3 mt-5">Resources</h2>
-                <li><a href="https://www.khronos.org/opengl/wiki/Shader">Introduce to shader</a></li>
-                <li><a href="https://github.com/JoeyDeVries/LearnOpenGL">OpenGL tutorials</a></li>
-                <li><a href="http://cg.alexandra.dk/2009/06/02/mosegaards-cloth-simulation-coding-tutorial">Mosegaards Cloth Simulation Coding Tutorial</a></li>
-                <li><a href="https://www.khronos.org/opengl/wiki/Transform_Feedback">Introduce to Transform Feedback</a></li>
-                <li><a href="https://open.gl/feedback">Transform Feedback tutorial</a></li>
-                <li><a href="https://cs184.eecs.berkeley.edu/sp19/article/34/assignment-4-cloth-simulation">GUI and CPU cloth simulation based on Project 4</a></li>
+                <li><a href="https://unity.com/cn">Unity</a></li>
+                <li><a href="https://assetstore.unity.com/?gclid=CjwKCAjwi_b3BRAGEiwAemPNU355lTXqDlaRSKAmhq9U1kCuSVxT-d5xIAfc0JDvbQNKDI2npYtWHBoCqQEQAvD_BwE">Unity assess store</a></li>
+                <li><a href="https://www.bilibili.com/video/BV18E411L7oU?from=search&seid=14471784090778981889">Unity FPS game tutorial</a></li>
+                <li><a href="https://translate.google.com/?hl=zh-CN">Google Translate</a></li>
+                <li><a href="https://github.com/">Github</a></li>
           </div>
             </div>
       </div>
