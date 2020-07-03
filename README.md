@@ -2,6 +2,8 @@
 
 This is the final project for ***Software Architecture and Application Development***  @ XMU.
 
+Check out our [web page](https://haoyifei996.github.io/Boom_Mushroom/index.html)
+
 ![login_view](https://github.com/HAoYifei996/Boom_Mushroom/blob/master/src/login.jpg)
 
 
