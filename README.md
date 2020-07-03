@@ -2,7 +2,7 @@
 
 This is the final project for ***Software Architecture and Application Development***  @ XMU.
 
-![](C:\Academic\project\FPS-demo (3)\src\login.jpg)
+![](.\src\login.jpg)
 
 
 
